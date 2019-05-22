@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PantallaRegistrar1"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:id="@+id/imgBackground"
+            android:src="@drawable/pantalla3"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btnIngresarRegistro"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:src="@drawable/btn1_1"
+            android:adjustViewBounds="true"
+            android:layout_alignBottom="@id/imgBackground"
+            android:scaleType="centerInside"
+            android:layout_marginVertical="20dp"
+            android:layout_alignParentEnd="true"
+            android:background="@android:color/transparent"/>
+
+    </RelativeLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblCamposObligatorios"
+        android:gravity="center"
+        android:textSize="18dp"
+        android:textColor="@android:color/holo_red_dark"
+        android:layout_marginHorizontal="10dp"
+        android:text="EL NOMBRE, APELLIDOS, TIPO Y NUMERO DE DOCUMENTO, NUMERO DE CELULAR, EMAIL Y CONTRASEÑA SON OBLIGATORIOS"
+        android:layout_weight="3"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="60"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/lyRegistrar1"
+        android:layout_marginHorizontal="20dp"
+        android:weightSum="17">
+
+
+
+
+
+            <EditText
+                android:id="@+id/etNombres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/background_dark"
+                android:textColorHint="#4B403E"
+                android:textSize="18dp"
+                android:hint="Nombres"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                />
+
+            <EditText
+                android:id="@+id/etApellidos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/background_dark"
+                android:textColorHint="#4B403E"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:hint="Apellidos"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="5dp"
+                />
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:gravity="center"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:id="@+id/lblTipoDoc"
+                android:textColor="@android:color/background_dark"
+                android:text="Tipo de documento"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:id="@+id/spnTipoDocumentoID"
+                android:layout_weight="1">
+            </Spinner>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/etDocumentoID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="#4B403E"
+            android:hint="Numero de documento de identidad"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/etTelefonoCelularRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="#4B403E"
+            android:hint="TelefonoCelular"
+            android:gravity="center"
+            android:inputType="number"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="#4B403E"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+        <EditText
+            android:id="@+id/etContraseña"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="#4B403E"
+            android:hint="Contraseña"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:layout_weight="1"/>
+
+
+
+            <ImageButton
+                android:id="@+id/btnRegistrarSiguiente"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_weight="2"
+                android:src="@drawable/btn3_21"
+                android:background="@android:color/transparent" />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="50"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/lyRegistrar2"
+        android:layout_marginHorizontal="20dp"
+        android:weightSum="17">
+
+
+        <ImageButton
+            android:id="@+id/btnRegistrarAnterior"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/btn3_22"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"/>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:id="@+id/lblEPS"
+                android:text="EPS"
+                android:textColor="@android:color/background_dark"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:id="@+id/spnEPS"
+                android:layout_weight="1"
+                android:gravity="center">
+            </Spinner>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:id="@+id/lblTipoSangre"
+                android:text="Tipo de Sangre"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@android:color/background_dark"
+                android:id="@+id/spnTipoSangre"
+                android:layout_weight="1"
+                >
+            </Spinner>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/etFechaNacimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:hint="Fecha de Nacimiento"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="#4B403E"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/etTelefonoFijoRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="#4B403E"
+            android:hint="Telefono fijo"
+            android:inputType="number"
+            android:gravity="center"
+            android:layout_weight="1"/>
+
+        <EditText
+            android:id="@+id/etDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="#4B403E"
+            android:gravity="center"
+            android:hint="Dirección de Residencia"
+            android:layout_weight="1"
+            />
+
+        <ImageButton
+            android:id="@+id/btnRegistrarGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:src="@drawable/btn3_2"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="30dp"
+            android:layout_weight="2"
+            android:background="@android:color/transparent"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
