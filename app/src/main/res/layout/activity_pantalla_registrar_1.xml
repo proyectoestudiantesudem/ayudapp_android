@@ -44,7 +44,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/lblCamposObligatorios"
         android:gravity="center"
-        android:textSize="18dp"
+        android:textSize="15dp"
         android:textColor="@android:color/holo_red_dark"
         android:layout_marginHorizontal="10dp"
         android:text="EL NOMBRE, APELLIDOS, TIPO Y NUMERO DE DOCUMENTO, NUMERO DE CELULAR, EMAIL Y CONTRASEÑA SON OBLIGATORIOS"

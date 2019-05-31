@@ -25,13 +25,22 @@
         android:layout_alignBottom="@id/background"
         android:layout_marginRight="150dp"/>
 
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/background"
+        android:layout_above="@+id/lyAgregarModificar"
+        android:layout_marginTop="50dp"
+        android:id="@+id/txtView1"
+        />
+
     <LinearLayout
         android:id="@+id/lyAgregarModificar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/background"
+        android:layout_above="@+id/ln2"
         android:orientation="horizontal"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="30dp">
 
         <ImageButton
             android:id="@+id/btnAgregar"
@@ -49,8 +58,10 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:weightSum="2"
-        android:layout_below="@id/lyAgregarModificar"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="50dp"
+        android:id="@+id/ln2"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp">
 
         <ImageButton
             android:id="@+id/btnDatosGenerales"

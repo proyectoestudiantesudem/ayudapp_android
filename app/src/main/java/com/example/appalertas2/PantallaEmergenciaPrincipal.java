@@ -10,8 +10,10 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.location.LocationProvider;
+import android.os.Build;
 import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.SmsManager;
@@ -49,6 +51,8 @@ public class PantallaEmergenciaPrincipal extends AppCompatActivity {
     static String telefono_contacto;
     String ID_USUARIO;
     Session sesion;
+    Location location;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +65,7 @@ public class PantallaEmergenciaPrincipal extends AppCompatActivity {
         if (b != null){
             ID_USUARIO = b.getString("Id");
         }
+
         btnCerrarSesion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -90,20 +95,22 @@ public class PantallaEmergenciaPrincipal extends AppCompatActivity {
                             Manifest.permission.SEND_SMS,}, 1000);
         }else{
 
-        };
+        }
 
         recibirTelefonoContacto(ID_USUARIO);
         btnEmergenciaPrincipal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                enviarMensaje("3234729383","Ayuda al usuario" + ID_USUARIO +" Esta ubicado en : UNIVERSIDAD DE MEDELLIN");
+                enviarMensaje("3234729383","Ayuda al usuario " + ID_USUARIO +" Esta ubicado en las coordenadas:\n"+ "LATITUD 6.219496299068041\n" + "Longitud -75.56878244112546\n" + "One Plaza Business Center");
 
             }
         });
 
 
     }
+
+
     public void recibirTelefonoContacto(final String idUsuario){
 
 
