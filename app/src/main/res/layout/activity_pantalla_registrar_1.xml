@@ -66,31 +66,31 @@
 
 
 
-            <EditText
-                android:id="@+id/etNombres"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@android:color/background_dark"
-                android:textColorHint="#4B403E"
-                android:textSize="18dp"
-                android:hint="Nombres"
-                android:gravity="center"
-                android:layout_weight="1"
-                android:layout_marginHorizontal="5dp"
-                />
+        <EditText
+            android:id="@+id/etNombres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="#4B403E"
+            android:textSize="18dp"
+            android:hint="Nombres"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            />
 
-            <EditText
-                android:id="@+id/etApellidos"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textColor="@android:color/background_dark"
-                android:textColorHint="#4B403E"
-                android:gravity="center"
-                android:textSize="18dp"
-                android:hint="Apellidos"
-                android:layout_weight="1"
-                android:layout_marginHorizontal="5dp"
-                />
+        <EditText
+            android:id="@+id/etApellidos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/background_dark"
+            android:textColorHint="#4B403E"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:hint="Apellidos"
+            android:layout_weight="1"
+            android:layout_marginHorizontal="5dp"
+            />
 
 
 
@@ -177,15 +177,15 @@
 
 
 
-            <ImageButton
-                android:id="@+id/btnRegistrarSiguiente"
-                android:layout_width="wrap_content"
-                android:layout_height="20dp"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:layout_weight="2"
-                android:src="@drawable/btn3_21"
-                android:background="@android:color/transparent" />
+        <ImageButton
+            android:id="@+id/btnRegistrarSiguiente"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:layout_weight="2"
+            android:src="@drawable/btn3_21"
+            android:background="@android:color/transparent" />
 
     </LinearLayout>
 
@@ -325,7 +325,3 @@
 
     </LinearLayout>
 </LinearLayout>
-
-
-
-

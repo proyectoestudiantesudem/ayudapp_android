@@ -1,57 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".PantallaEmergenciaPrincipal"
-    android:orientation="vertical"
-    android:weightSum="100">
-
-    <ImageView
-        android:id="@+id/backgroundButtonStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="true"
-        android:src="@drawable/pantalla4"/>
-
-    <ImageButton
-        android:id="@+id/btnEmergenciaPrincipal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="50dp"
-        android:scaleType="fitXY"
-        android:background="@android:color/transparent"
-        android:adjustViewBounds="true"
-        android:layout_alignBottom="@id/backgroundButtonStyle"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/btn4_1" />
-
-    <ImageButton
-        android:id="@+id/btnAyudaAOtrosPrincipal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/ln1"
-        android:layout_marginHorizontal="50dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginBottom="0dp"
-        android:adjustViewBounds="true"
-        android:background="@android:color/transparent"
-        android:scaleType="centerInside"
-        android:src="@drawable/btn4_2" />
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:id="@+id/ln1"
-        android:layout_weight="20"
         android:weightSum="3">
 
         <ImageButton
             android:id="@+id/btnMiPerfilPrincipal"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:scaleType="fitXY"
             android:background="@android:color/transparent"
             android:adjustViewBounds="true"
@@ -61,8 +27,8 @@
 
         <ImageButton
             android:id="@+id/btnMisContactosPrincipal"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:scaleType="fitXY"
             android:background="@android:color/transparent"
             android:adjustViewBounds="true"
@@ -71,8 +37,8 @@
 
         <ImageButton
             android:id="@+id/btnCentroSaludPrincipal"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:scaleType="fitXY"
             android:background="@android:color/transparent"
             android:adjustViewBounds="true"
@@ -81,16 +47,84 @@
 
     </LinearLayout>
 
-    <ImageButton
-        android:id="@+id/imageButtonCerrarSesion"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        app:srcCompat="@drawable/btncerrar"
-        android:layout_below="@+id/btnEmergenciaPrincipal"/>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Ulitie este botón\n para cerrar sesion"
-        android:layout_below="@+id/imageButtonCerrarSesion"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="5"
+        >
 
-</RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#b60000">
+
+            <ImageView
+                android:id="@+id/backgroundButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/pantalla4"
+                android:layout_alignParentBottom="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="10"
+                android:gravity="center">
+
+                <ImageButton
+                    android:id="@+id/btnAyudaAOtrosPrincipal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="50dp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/btn4_2"
+                    android:layout_weight="7"
+                    android:layout_marginVertical="10dp"
+                    android:paddingHorizontal="20dp"/>
+
+                <ImageButton
+                    android:id="@+id/btnEmergenciaPrincipal"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="50dp"
+                    android:scaleType="fitCenter"
+                    android:background="@android:color/transparent"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/btn4_1"
+                    android:layout_marginVertical="10dp"
+                    android:layout_weight="3"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:gravity="left"
+            android:layout_weight="3"
+            android:paddingBottom="25dp">
+
+            <ImageButton
+                android:id="@+id/imageButtonCerrarSesion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:background="@android:color/transparent"
+                android:src="@drawable/btncerrarsesion"
+                android:layout_marginHorizontal="30dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

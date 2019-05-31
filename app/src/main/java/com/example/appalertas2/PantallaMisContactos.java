@@ -3,9 +3,12 @@ package com.example.appalertas2;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -30,10 +33,10 @@ import cache.Session;
 
 public class PantallaMisContactos extends AppCompatActivity {
 
-    ListView lvContactos;
-    ImageButton btnAgregarContacto;
+    RecyclerView lvContactos;
+    Button btnAgregarContacto;
     String ID_USUARIO;
-    ArrayAdapter<String> adapter;
+    RecyclerAdapter adapter;
     ArrayList<String> listaContactos = new ArrayList<>();
 
     @Override
@@ -64,8 +67,10 @@ public class PantallaMisContactos extends AppCompatActivity {
 
 
     private void conecta(){
-        lvContactos = findViewById(R.id.lvContactos);
+
         btnAgregarContacto = findViewById(R.id.btnAgregarContacto);
+        lvContactos = findViewById(R.id.lvContactos);
+        lvContactos.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
 
     }
 
@@ -120,7 +125,7 @@ public class PantallaMisContactos extends AppCompatActivity {
                     listaContactos.add(contenido);
 
                 }
-                adapter = new ArrayAdapter<>(getApplication(), android.R.layout.simple_list_item_1, listaContactos);
+                adapter = new RecyclerAdapter(listaContactos);
                 lvContactos.setAdapter(adapter);
 
             }else

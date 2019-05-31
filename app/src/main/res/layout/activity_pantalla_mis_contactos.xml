@@ -8,40 +8,59 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/pantalla3_2"
+        android:layout_height="200dp"
+        android:src="@drawable/colorapp"
         android:id="@+id/imageView1"
         />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="198dp"
-        android:layout_height="137dp"
-        android:layout_above="@+id/lvContactos"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/btn4_4" />
-    <ListView
-        android:id="@+id/lvContactos"
-        android:layout_centerVertical="true"
         android:layout_width="match_parent"
-        android:layout_height="200dp">
+        android:layout_height="170dp"
+        android:src="@drawable/logo"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Mis Contactos"
+        android:textColor="@android:color/background_light"
+        android:layout_alignBottom="@id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"/>
 
 
-    </ListView>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/lvContactos"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingHorizontal="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/imageView1"
+        android:layout_marginVertical="30dp">
 
-    <ImageButton
-        android:layout_width="100dp"
-        android:layout_height="50dp"
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="40dp"
+        android:paddingVertical="10dp"
         android:id="@+id/btnAgregarContacto"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/lvContactos"
-        android:background="@drawable/btn1_2"        />
+        android:text="Registrar"
+        android:textColor="@android:color/background_light"
+        android:layout_above="@id/text1"
+        android:layout_margin="20dp"
+        android:background="@drawable/button_shape"        />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/text1"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/btnAgregarContacto"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
         android:text="SI DESEA AGREGAR UN CONTACTO\n PRESIONE EL BOTÓN"/>
 
 </RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/item_shape"
+    android:padding="5dp"
+    >
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/contacto"
+        android:id="@+id/imgContacto"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lblContacto"
+        android:textSize="15dp"
+        android:textColor="@android:color/tertiary_text_dark"
+        android:layout_toRightOf="@id/imgContacto"
+        android:layout_alignBottom="@id/imgContacto"
+        android:text=" Nombre contacto:"/>
+
+</RelativeLayout>

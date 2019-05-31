@@ -23,7 +23,7 @@
         android:scaleType="centerInside"
         android:background="@android:color/transparent"
         android:layout_alignBottom="@id/background"
-        android:layout_marginRight="100dp"/>
+        android:layout_marginRight="150dp"/>
 
     <LinearLayout
         android:id="@+id/lyAgregarModificar"
@@ -31,7 +31,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@id/background"
         android:orientation="horizontal"
-        android:weightSum="2"
         android:layout_marginTop="50dp">
 
         <ImageButton
@@ -42,19 +41,7 @@
             android:adjustViewBounds="true"
             android:scaleType="centerInside"
             android:background="@android:color/transparent"
-            android:layout_weight="1"
             />
-
-        <ImageButton
-            android:id="@+id/btnModificar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/btn5_3"
-            android:adjustViewBounds="true"
-            android:scaleType="centerInside"
-            android:background="@android:color/transparent"
-            android:layout_weight="1"/>
-
     </LinearLayout>
 
     <LinearLayout

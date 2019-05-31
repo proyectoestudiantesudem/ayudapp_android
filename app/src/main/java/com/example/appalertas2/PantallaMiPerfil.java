@@ -26,7 +26,7 @@ public class PantallaMiPerfil extends AppCompatActivity {
         btnDatosGrles.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), PantallaDatosGenerales.class).putExtra("Id",ID_USUARIO);;
+                Intent i = new Intent(getApplicationContext(), PantallaDatosGenerales.class).putExtra("Id",ID_USUARIO);
                 startActivity(i);
             }
         });
@@ -34,24 +34,24 @@ public class PantallaMiPerfil extends AppCompatActivity {
         btnRMiPerfil.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), PantallaEmergenciaPrincipal.class).putExtra("Id",ID_USUARIO);;
+                Intent i = new Intent(getApplicationContext(), PantallaEmergenciaPrincipal.class).putExtra("Id",ID_USUARIO);
                 startActivity(i);
             }
         });
         btnAgregar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(getApplicationContext(), PantallaDatosGenerales.class).putExtra("Id",ID_USUARIO);;
+                Intent i = new Intent(getApplicationContext(), PantallaDatosGenerales.class).putExtra("Id",ID_USUARIO);
                 startActivity(i);
             }
         });
-        btnModificar.setOnClickListener(new View.OnClickListener() {
+        /*btnModificar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getApplicationContext(), PantallaDatosGenerales.class).putExtra("Id",ID_USUARIO);;
                 startActivity(i);
             }
-        });
+        });*/
     }
 
 
@@ -59,7 +59,7 @@ public class PantallaMiPerfil extends AppCompatActivity {
         btnDatosGrles = findViewById(R.id.btnDatosGenerales);
         btnInfoAdicional = findViewById(R.id.btnInformacionAdicional);
         btnRMiPerfil = findViewById(R.id.btnRMiPerfil);
-        btnModificar = findViewById(R.id.btnModificar);
+       //btnModificar = findViewById(R.id.btnModificar);
         btnAgregar = findViewById(R.id.btnAgregar);
         //btnMisContactos = (ImageButton)findViewById(R.id.btnMisContactosPrincipal);
 
